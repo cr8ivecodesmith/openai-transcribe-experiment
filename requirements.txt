@@ -1,0 +1,6 @@
+openai
+pydub
+speechrecognition
+
+# Utils
+python-dotenv

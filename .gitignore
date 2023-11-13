@@ -1,0 +1,12 @@
+*.py[cod]
+__pycache__
+
+*.mp3
+out/
+
+db/
+history/
+prompt_cache/
+docs_cache/
+*.pkl
+.env
