@@ -2,6 +2,7 @@
 __pycache__
 
 *.mp3
+*_transcription.txt
 out/
 
 db/

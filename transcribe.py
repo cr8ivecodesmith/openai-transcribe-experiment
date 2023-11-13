@@ -69,7 +69,7 @@ def main(args):
         sleep(1)
 
     print('Saving transcription...')
-    transcription_file = Path(f'{audio_file_path.name}.txt')
+    transcription_file = Path(f'{audio_file_path.stem}_transcription.txt')
     with transcription_file.open('w') as fh:
         fh.write('\n'.join(transcription_texts))
 
