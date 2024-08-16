@@ -25,5 +25,5 @@ ffmpeg -i video.mp4 -q:a 0 -map a video_audio.mp3
 Then start transcribing it with the tool:
 
 ```sh
-python transcribe.py video_audion.mp3
+python transcribe.py video_audio.mp3
 ```

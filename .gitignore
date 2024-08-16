@@ -11,3 +11,7 @@ prompt_cache/
 docs_cache/
 *.pkl
 .env
+
+.python-version
+output/
+input/
