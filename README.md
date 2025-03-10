@@ -27,3 +27,17 @@ Then start transcribing it with the tool:
 ```sh
 python transcribe.py video_audio.mp3
 ```
+
+If you want to download a video you can use:
+
+Fish
+
+```sh
+yt-dlp --config-location (pwd) URL
+```
+
+Bash
+
+```sh
+yt-dlp --config-location $(pwd) URL
+```

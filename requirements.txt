@@ -1,6 +1,7 @@
 openai
 pydub
 speechrecognition
+yt-dlp[default]
 
 # Utils
 python-dotenv
