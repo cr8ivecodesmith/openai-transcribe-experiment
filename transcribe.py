@@ -69,7 +69,9 @@ def main(args):
         sleep(1)
 
     print('Saving transcription...')
-    transcription_file = Path(f'{audio_file_path.stem}_transcription.txt')
+    output_path = Path(f'{args.output_dir or "."}')
+    transcription_file = output_path.joinpath(
+        f'{audio_file_path.stem}_transcription.txt')
     with transcription_file.open('w') as fh:
         fh.write('\n'.join(transcription_texts))
 
@@ -88,6 +90,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     parser.add_argument('AUDIO_FILE')
+    parser.add_argument(
+        '-o', '--output-dir',
+        dest='output_dir'
+    )
 
     params = parser.parse_args()
 

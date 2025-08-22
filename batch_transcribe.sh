@@ -6,15 +6,16 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-DIRECTORY=$1
+input_dir="$1"
+output_dir="$2"
 
 # Loop through all mp3 files in the directory
-for file in "$DIRECTORY"/*.mp3; do
+for file in "$input_dir"/*.mp3; do
   if [ -f "$file" ]; then
     echo "Processing file: $file"
     
     # Run the transcript conversion
-    python transcribe.py "$file"
+    python transcribe.py "$file" -o "$output_dir"
     
     # Pause for 60 seconds
     echo "Pausing for 60 seconds..."
