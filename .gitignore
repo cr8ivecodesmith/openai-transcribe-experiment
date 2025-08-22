@@ -15,3 +15,5 @@ docs_cache/
 .python-version
 output/
 input/
+
+.nvmrc

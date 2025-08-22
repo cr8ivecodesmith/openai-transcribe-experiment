@@ -1,0 +1,45 @@
+[blog]
+model = "gpt-4o-mini"
+prompt = """
+You are an expert technical writer. Convert the following transcript into a
+concise, well-structured blog post with:
+- A compelling title
+- An opening summary paragraph
+- Clear headings and short sections
+- Bulleted key takeaways
+- A brief conclusion
+
+Use Markdown. Keep a professional, friendly tone. Avoid filler.
+
+Transcript:
+{transcript}
+"""
+
+[notes]
+model = "gpt-4o-mini"
+prompt = """
+Summarize the transcript into organized meeting notes:
+- Agenda
+- Decisions
+- Action Items (with owners and due dates if mentioned)
+- Open Questions
+
+Use Markdown with headings and bullet points. Be specific.
+
+Transcript:
+{transcript}
+"""
+
+[outline]
+model = "gpt-4o-mini"
+prompt = """
+Create a detailed article outline from the transcript. Include:
+- Working title
+- 5–8 main sections
+- 2–4 bullet points per section
+- Suggested visuals or code snippets where helpful
+
+Transcript:
+{transcript}
+"""
+
